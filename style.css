@@ -1,8 +1,8 @@
 @import url(normalize.css);
 
 :root {
-  --bg-accent-color: #38bdf8;
-  --bg-color: #f5f5f4;
+  --bg-accent-color: #30a2d3;
+  --bg-color: #e7e7e7;
 
   /* svg icons */
   --i-dashboard: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRpdGxlPnZpZXctZGFzaGJvYXJkPC90aXRsZT48cGF0aCBkPSJNMTMsM1Y5SDIxVjNNMTMsMjFIMjFWMTFIMTNNMywyMUgxMVYxNUgzTTMsMTNIMTFWM0gzVjEzWiIgLz48L3N2Zz4=);
@@ -15,15 +15,17 @@
   --i-settings: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLDE1LjVBMy41LDMuNSAwIDAsMSA4LjUsMTJBMy41LDMuNSAwIDAsMSAxMiw4LjVBMy41LDMuNSAwIDAsMSAxNS41LDEyQTMuNSwzLjUgMCAwLDEgMTIsMTUuNU0xOS40MywxMi45N0MxOS40NywxMi42NSAxOS41LDEyLjMzIDE5LjUsMTJDMTkuNSwxMS42NyAxOS40NywxMS4zNCAxOS40MywxMUwyMS41NCw5LjM3QzIxLjczLDkuMjIgMjEuNzgsOC45NSAyMS42Niw4LjczTDE5LjY2LDUuMjdDMTkuNTQsNS4wNSAxOS4yNyw0Ljk2IDE5LjA1LDUuMDVMMTYuNTYsNi4wNUMxNi4wNCw1LjY2IDE1LjUsNS4zMiAxNC44Nyw1LjA3TDE0LjUsMi40MkMxNC40NiwyLjE4IDE0LjI1LDIgMTQsMkgxMEM5Ljc1LDIgOS41NCwyLjE4IDkuNSwyLjQyTDkuMTMsNS4wN0M4LjUsNS4zMiA3Ljk2LDUuNjYgNy40NCw2LjA1TDQuOTUsNS4wNUM0LjczLDQuOTYgNC40Niw1LjA1IDQuMzQsNS4yN0wyLjM0LDguNzNDMi4yMSw4Ljk1IDIuMjcsOS4yMiAyLjQ2LDkuMzdMNC41NywxMUM0LjUzLDExLjM0IDQuNSwxMS42NyA0LjUsMTJDNC41LDEyLjMzIDQuNTMsMTIuNjUgNC41NywxMi45N0wyLjQ2LDE0LjYzQzIuMjcsMTQuNzggMi4yMSwxNS4wNSAyLjM0LDE1LjI3TDQuMzQsMTguNzNDNC40NiwxOC45NSA0LjczLDE5LjAzIDQuOTUsMTguOTVMNy40NCwxNy45NEM3Ljk2LDE4LjM0IDguNSwxOC42OCA5LjEzLDE4LjkzTDkuNSwyMS41OEM5LjU0LDIxLjgyIDkuNzUsMjIgMTAsMjJIMTRDMTQuMjUsMjIgMTQuNDYsMjEuODIgMTQuNSwyMS41OEwxNC44NywxOC45M0MxNS41LDE4LjY3IDE2LjA0LDE4LjM0IDE2LjU2LDE3Ljk0TDE5LjA1LDE4Ljk1QzE5LjI3LDE5LjAzIDE5LjU0LDE4Ljk1IDE5LjY2LDE4LjczTDIxLjY2LDE1LjI3QzIxLjc4LDE1LjA1IDIxLjczLDE0Ljc4IDIxLjU0LDE0LjYzTDE5LjQzLDEyLjk3WiIgLz48L3N2Zz4=);
   --i-support: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTExLDE4SDEzVjE2SDExVjE4TTEyLDZBNCw0IDAgMCwwIDgsMTBIMTBBMiwyIDAgMCwxIDEyLDhBMiwyIDAgMCwxIDE0LDEwQzE0LDEyIDExLDExLjc1IDExLDE1SDEzQzEzLDEyLjc1IDE2LDEyLjUgMTYsMTBBNCw0IDAgMCwwIDEyLDZNNSwzSDE5QTIsMiAwIDAsMSAyMSw1VjE5QTIsMiAwIDAsMSAxOSwyMUg1QTIsMiAwIDAsMSAzLDE5VjVBMiwyIDAgMCwxIDUsM1oiIC8+PC9zdmc+);
   --i-privacy: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEwLDE3TDYsMTNMNy40MSwxMS41OUwxMCwxNC4xN0wxNi41OSw3LjU4TDE4LDlNMTIsMUwzLDVWMTFDMywxNi41NSA2Ljg0LDIxLjc0IDEyLDIzQzE3LjE2LDIxLjc0IDIxLDE2LjU1IDIxLDExVjVMMTIsMVoiIC8+PC9zdmc+);
+  --i-search: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTkuNSwzQTYuNSw2LjUgMCAwLDEgMTYsOS41QzE2LDExLjExIDE1LjQxLDEyLjU5IDE0LjQ0LDEzLjczTDE0LjcxLDE0SDE1LjVMMjAuNSwxOUwxOSwyMC41TDE0LDE1LjVWMTQuNzFMMTMuNzMsMTQuNDRDMTIuNTksMTUuNDEgMTEuMTEsMTYgOS41LDE2QTYuNSw2LjUgMCAwLDEgMyw5LjVBNi41LDYuNSAwIDAsMSA5LjUsM005LjUsNUM3LDUgNSw3IDUsOS41QzUsMTIgNywxNCA5LjUsMTRDMTIsMTQgMTQsMTIgMTQsOS41QzE0LDcgMTIsNSA5LjUsNVoiIC8+PC9zdmc+);
+  --i-notif: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEwLDIxSDE0QTIsMiAwIDAsMSAxMiwyM0EyLDIgMCAwLDEgMTAsMjFNMjEsMTlWMjBIM1YxOUw1LDE3VjExQzUsNy45IDcuMDMsNS4xNyAxMCw0LjI5QzEwLDQuMTkgMTAsNC4xIDEwLDRBMiwyIDAgMCwxIDEyLDJBMiwyIDAgMCwxIDE0LDRDMTQsNC4xIDE0LDQuMTkgMTQsNC4yOUMxNi45Nyw1LjE3IDE5LDcuOSAxOSwxMVYxN0wyMSwxOU0xNywxMUE1LDUgMCAwLDAgMTIsNkE1LDUgMCAwLDAgNywxMVYxOEgxN1YxMU0xOS43NSwzLjE5TDE4LjMzLDQuNjFDMjAuMDQsNi4zIDIxLDguNiAyMSwxMUgyM0MyMyw4LjA3IDIxLjg0LDUuMjUgMTkuNzUsMy4xOU0xLDExSDNDMyw4LjYgMy45Niw2LjMgNS42Nyw0LjYxTDQuMjUsMy4xOUMyLjE2LDUuMjUgMSw4LjA3IDEsMTFaIiAvPjwvc3ZnPg==);
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--bg-color);
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 20% 80%;
   grid-template-columns: 20% 80%;
   grid-template-areas: 
       "sidebar       header"
@@ -151,6 +153,109 @@ body {
 
 .dashboard-header {
   grid-area: header;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 30% 70%;
+  grid-template-columns: 60% 40%;
+  row-gap: 0.8em;
+  background-color: white;
+  padding: calc(1vw + 0.2em) calc(1vw + 1.5em);
+  box-shadow: 1px 2px 5px #3d3d3d;
+}
+
+.dashboard-header .search {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: center;
+}
+.dashboard-header .search input {
+  width: 85%;
+  padding: 0.3em 1em;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  border: none;
+}
+.dashboard-header .search input:focus {
+  outline: 2px solid var(--bg-accent-color);
+}
+.dashboard-header .search::before {
+  content: "";
+  margin-right: 0.5em;
+  background-image: var(--i-search);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 2.5em;
+}
+
+.dashboard-header .profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.dashboard-header .profile .profile-pic > img {
+  height: calc(1.1vw + 1.2em);
+}
+
+.dashboard-header .profile .notif {
+  content: "";
+  background-image: var(--i-notif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: calc(1.1vw + 0.6em);
+  width: calc(1.1vw + 0.6em);
+}
+
+.dashboard-header .profile h3 {
+  font-size: calc(1vw + 0.2rem);
+}
+
+.dashboard-header .greeting {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-header .greeting .profile-pic {
+  margin-right: 0.8em;
+}
+.dashboard-header .greeting .profile-pic > img {
+  height: calc(1.1vw + 2.5em);
+}
+
+.dashboard-header .greeting .greeting-text {
+  line-height: 0.5;
+  font-weight: bold;
+
+  & > p:first-child {
+    font-size: calc(0.8vw + 0.2rem);
+  }
+
+  & .profile-handle-name {
+    font-size: calc(1.1vw + 0.4rem);
+  }
+}
+
+.dashboard-header .nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  place-items: center;
+}
+
+.dashboard-header .nav button {
+  font-size: calc(1vw + 0.2rem);
+  border: none;
+  border-radius: 25px;
+  width: calc(1.1vw + 6em);
+  background-color: var(--bg-accent-color);
+  color: white;
+  padding: 0.5em 1em;
+  margin: auto 0.5em;
+  cursor: pointer;
 }
 
 .main-content {
@@ -160,10 +265,4 @@ body {
 .profile-pic > img {
   border-radius: 50%;
   background-position: center;
-}
-.greeting .profile-pic > img {
-  height: 5.5em;
-}
-.profile .profile-pic > img {
-  height: 3.5em;
 }
