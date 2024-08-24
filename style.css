@@ -198,6 +198,7 @@ body {
 
 .dashboard-header .profile .profile-pic > img {
   height: calc(1.1vw + 1.2em);
+  width: calc(1.1vw + 1.2em);
 }
 
 .dashboard-header .profile .notif {
@@ -220,10 +221,11 @@ body {
 }
 
 .dashboard-header .greeting .profile-pic {
-  margin-right: 0.8em;
+  margin-right: 1em;
 }
 .dashboard-header .greeting .profile-pic > img {
-  height: calc(1.1vw + 2.5em);
+  height: calc(1.1vw + 2.8em);
+  width: calc(1.1vw + 2.8em);
 }
 
 .dashboard-header .greeting .greeting-text {
