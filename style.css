@@ -36,6 +36,11 @@ body {
       "sidebar main-content";
 }
 
+.profile-pic > img {
+  border-radius: 50%;
+  background-position: center;
+}
+
 .sidebar {
   grid-area: sidebar;
   background-color: var(--bg-accent-color);
@@ -273,6 +278,7 @@ body {
   grid-template-areas: 
         "projects projects announcements"
         "projects projects     trending";
+  gap: calc(1vw + 0.5em);
 }
 
 .main-content .projects {
@@ -358,7 +364,43 @@ body {
   }
 }
 
-.profile-pic > img {
-  border-radius: 50%;
-  background-position: center;
+.announcements h2 {
+  font-size: clamp(1rem, 1.1vw + 0.5rem, 2.5rem);
+}
+
+.announcement-lists {
+  background-color: white;
+  max-height: 30vw;
+  border-radius: 10px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement-lists section {
+  overflow: hidden;
+}
+
+.announcement-lists section:not(:last-child) {
+  border-bottom: 1px solid var(--bg-color);
+}
+
+.announcement-lists section .title {
+  font-size: clamp(0.8rem, 0.8vw + 0.2rem, 1.2rem);
+  margin: 1em 0;
+}
+
+.announcement-lists section:first-child .title {
+  margin-top: 0;
+}
+
+.announcement-lists section .content {
+  color: gray;
+  font-size: clamp(0.5rem, 0.7vw + 0.2rem, 1rem);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
 }
