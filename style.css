@@ -453,3 +453,11 @@ body {
   font-size: clamp(0.8rem, 0.8vw + 0.2rem, 1.2rem);
   color: gray;
 }
+
+.project-overview, .announcement-lists, .trending .users {
+  box-shadow: 2px 3px 5px #7e7e7e;
+}
+
+.sidebar {
+  box-shadow: 1px 1px 3px #7e7e7e;
+}
