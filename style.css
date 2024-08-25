@@ -25,6 +25,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+  line-height: 1.5;
   background-color: var(--bg-color);
   box-sizing: border-box;
   display: grid;
@@ -72,7 +73,7 @@ body {
 }
 
 .sidebar-list {
-  font-size: calc(1.1vw + 0.2rem);
+  font-size: clamp(1rem, 1.1vw + 0.2rem, 1.5rem);
   font-weight: bold;
   display: flex;
   gap: 1em;
@@ -215,7 +216,7 @@ body {
 }
 
 .dashboard-header .profile h3 {
-  font-size: calc(1vw + 0.2rem);
+  font-size: clamp(0.5rem, 1vw + 0.2rem, 1.2rem);
 }
 
 .dashboard-header .greeting {
@@ -236,7 +237,7 @@ body {
   font-weight: bold;
 
   & > p:first-child {
-    font-size: calc(0.8vw + 0.2rem);
+    font-size: clamp(0.8rem, 0.8vw + 0.2rem, 1rem);
   }
 
   & .profile-handle-name {
@@ -276,6 +277,10 @@ body {
 
 .main-content .projects {
   grid-area: projects;
+
+  & h2 {
+    font-size: clamp(1rem, 1.1vw + 0.5rem, 2.5rem);;
+  }
 }
 
 .project-lists {
@@ -315,12 +320,13 @@ body {
 }
 
 .project-lists .project-overview .title {
-  margin: 3px 0;
+  font-size: clamp(1rem, 1.1vw + 0.5rem, 2.5rem);
+  margin: 5px 0;
 }
 
 .project-lists .project-overview .description {
   color: gray;
-  font-size: 0.85rem;
+  font-size: clamp(0.8rem, 0.8vw + 0.2rem, 1.2rem);
   margin: 0;
 }
 
